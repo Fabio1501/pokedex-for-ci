@@ -23,4 +23,11 @@ jobs:
         run: npm run build 
       - name: Tests
         run: npm test
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with: 
+          command: npm run test:2e2
+          start: npm run start:test
+          wait-on: http://localhost:5000
+
 
