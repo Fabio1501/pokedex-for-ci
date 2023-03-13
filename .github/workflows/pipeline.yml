@@ -16,7 +16,7 @@ jobs:
           node-version: 16
       - name: Install dependencies
       # OPTIMIZA LA INTEGRACION
-        run: npm install --no-audit --no-fund --no-optional
+        run: npm ci
       - name: Linter
         run: npm run eslint
       - name: Build
