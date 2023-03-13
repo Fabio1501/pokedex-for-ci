@@ -20,7 +20,7 @@ jobs:
       - name: Linter
         run: npm run eslint
       - name: Build
-        run: nm run build 
+        run: npm run build 
       - name: Tests
         run: npm test
 
