@@ -1,3 +1,8 @@
-module.exports = {
-  videoUploadOnPasses: false
-}
+const { defineConfig } = require('cypress')
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'http://localhost:5000',
+  },
+  videoUploadOnPasses : false
+})
